@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 name: Main Taski workflow
 
 on:
@@ -23,20 +22,3 @@ jobs:
         pip install flake8==6.0.0 flake8-isort==6.0.0
     - name: Test with flake8
       run: python -m flake8 backend/
-=======
-name: Main Taski Workflow
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  checkout-and-print-tree:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      - name: Print project tree
-        run: tree .
->>>>>>> 94c725c02ea775929c790b12df7830e6e11311b2
